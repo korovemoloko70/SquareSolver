@@ -62,10 +62,10 @@ void SolveLinearEquation(const double b, const double c, double* const x1,
     assert(num_roots != NULL);
 
     if (CompareWithZero(b) == 0)
-       {
-          if (CompareWithZero(c) == 0) return *num_roots = ANYTHING_IS_ROOT;    // a = 0, b = 0, c = 0
-          else *num_roots = 0;           // a = 0, b = 0, c != 0
-       }
+    {
+       if (CompareWithZero(c) == 0) return *num_roots = ANYTHING_IS_ROOT;    // a = 0, b = 0, c = 0
+       else *num_roots = 0;           // a = 0, b = 0, c != 0
+    }
     else
     {
         *x1 = -c / b;
